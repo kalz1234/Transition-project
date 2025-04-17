@@ -111,7 +111,7 @@ section{
 }
 
 .block.shadow {
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 7px 0px snow;
 }
 
 .block.skew {
