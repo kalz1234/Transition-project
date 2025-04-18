@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         void block.offsetWidth;
 
         block.style.transition = `${transitionTypes(transition)} ${duration}s ${select}`
+        codeBlock.innerText = `transition: ${transition} ${duration}s ${select};`;
         block.classList.add(transition);
 
     }
