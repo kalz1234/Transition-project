@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Animation Explorer</title>
+  <link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CSS Animation Playground</h1>
+      <div class="controls">
+        <div class="control-group">
+          <label for="duration">Duration (s):</label>
+          <input type="number" id="duration" min="0" max="10" step="1" value="2" />
+        </div>
+        
+        <div class="control-group">
+          <label for="easing">Easing:</label>
+          
+          <select id="easing">
+            <option value="ease">ease</option>
+            <option value="linear">linear</option>
+            <option value="ease-in">ease-in</option>
+            <option value="ease-out">ease-out</option>
+            <option value="ease-in-out">ease-in-out</option>
+          </select>
+        </div>
+        
+        <div class="control-group">
+          <label for="iteration">Iterations:</label>
+          <select id="iteration">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="infinite">Infinite</option>
+          </select>
+        </div>
+        
+      </div>
+    </header>
+
+    <main>
+      <div class="preview">
+        <div class="block" id="block"></div>
+        <div class="code-block" id="codeBlock"></div>
+      </div>
+      <div class="animations-list">
+        <button data-animation="background-color">Background-Color</button>
+        <button data-animation="bounce">Bounce</button>
+        <button data-animation="flash">Flash</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="animations.js"></script>
+</body>
+</html>
+
