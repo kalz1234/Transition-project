@@ -8,7 +8,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.6;
     padding: 2rem;
-    background-color: #4a5764;
+    background-color: #4d4d4d;
     color: snow;
 }
 
@@ -35,10 +35,10 @@ h1{
 }
 
 select, input{
-    background-color: #373d42;
+    background-color: #232323;
     color: snow;
     padding: 0.35rem;
-    border: 1px solid snow;
+    border: 1px solid #6fa6dd;
     border-radius: 7px;
     text-align: start;
 }
@@ -51,7 +51,7 @@ section{
 
 .transition-list{
     flex: 1;
-    background-color: #373d42;
+    background-color: #232323;
     padding: 1rem;
     border-radius: 8px;
 }
@@ -69,7 +69,7 @@ section{
 }
 
 .transition-list button:hover{
-    background-color: #4a5764;
+    background-color: #4d4d4d;
 }
 
 .preview{
@@ -79,15 +79,17 @@ section{
 }
 
 .block{
-    height: 50px;
-    background: #6fa6dd;
+    height: 100px;
+    background: #1595ff;
     width: 110px;
     margin: auto;
     border-radius: 7px;
+    font-size: 1.5rem;
+    align-content: center;
 }
 
 .block.fade{
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .block.slide-right {
@@ -107,7 +109,7 @@ section{
 }
 
 .block.color {
-    background: #ffc955;
+    background: #ffc42b;
 }
 
 .block.shadow {
