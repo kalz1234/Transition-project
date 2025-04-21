@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
       block.classList.add(animation);
       block.style.animation = `${animation} ${duration}s ${select} ${iterations}`;
-      codeBlock.innerText = `animation: ${animation} ${duration}s ${select} ${iterations};`;
       currentAnimation = animation;
     }
   
