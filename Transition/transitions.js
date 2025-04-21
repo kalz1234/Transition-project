@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const box = document.getElementById("box");
     const block = document.getElementById("block");
     const durationInput = document.getElementById("duration");
     const easingSelect = document.getElementById("easing");
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         void block.offsetWidth;
 
         block.style.transition = `${transitionTypes(transition)} ${duration}s ${select}`
-        codeBlock.innerText = `transition: ${transition} ${duration}s ${select};`;
         block.classList.add(transition);
 
     }
@@ -44,12 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     durationInput.addEventListener("input", () => {
-        const active = document.querySelector(".transition-btn.active");
+        const active = document.querySelector(".transition-btn .active");
         if (active) applyTransition(active.classList[1]);
       });
       
     easingSelect.addEventListener("change", () => {
-        const active = document.querySelector(".transition-btn.active");
+        const active = document.querySelector(".transition-btn .active");
         if (active) applyTransition(active.classList[1]);
       });
 
