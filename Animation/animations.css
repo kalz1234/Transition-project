@@ -191,13 +191,3 @@ main {
     }
   }
 
-.code-block {
-    background: #0f172a;
-    padding: 1rem;
-    margin-top: 1rem;
-    font-family: monospace;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    overflow-x: auto;
-}
-
