@@ -91,6 +91,7 @@ main {
     height: 120px;
     border-radius: 10px;
     background-color: #1595ff;
+    align-content: center;
 }
 
 /*Background color*/
@@ -130,6 +131,65 @@ main {
 	100% { opacity: 1; }
 }
 
+/* pulse */
+.block.pulse{
+    animation: pulse;
+}
+
+@keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+  /* Swing */
+
+  .block.swing{
+    animation: swing;
+  }
+
+  @keyframes swing {
+    0% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+  }
+
+  /* Heartrate */
+
+  .block.heartbeat{
+    animation: heartbeat;
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    25% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    75% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+  }
 
 .code-block {
     background: #0f172a;
