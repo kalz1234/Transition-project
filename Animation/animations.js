@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     let currentAnimation = "";
   
+    //Apply Animation Function
     function applyAnimation(animation) {
       const duration = durationInput.value;
       const select = easingSelect.value;
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       currentAnimation = animation;
     }
   
+    //User clicks animation button
     buttons.forEach(button => {
       button.addEventListener("click", () => {
         buttons.forEach(btn => btn.classList.remove("active"));
@@ -31,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   
+    //User enters duration, easing type, iteration
     [durationInput, easingSelect, iterationSelect].forEach(input => {
       input.addEventListener("input", () => {
         if (currentAnimation) {

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const easingSelect = document.getElementById("easing");
     const buttons = document.querySelectorAll(".transition-list button");
 
-
+    //Apply Transition function
     function applyTransition(transition){
         const duration = durationInput.value;
         const select = easingSelect.value;
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
+    //Transition types function
     function transitionTypes(type){
         const transition = {
             "fade": "opacity",
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return transition[type] || "all";
     }
 
+    //User Clicks the transition button
     buttons.forEach(button => {
         button.addEventListener("click", () => {
             const transitionType = button.classList[1];
@@ -41,11 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
+    //User enters duration
     durationInput.addEventListener("input", () => {
         const active = document.querySelector(".transition-btn .active");
         if (active) applyTransition(active.classList[1]);
       });
       
+    //User selects easing type
     easingSelect.addEventListener("change", () => {
         const active = document.querySelector(".transition-btn .active");
         if (active) applyTransition(active.classList[1]);

@@ -54,6 +54,7 @@ main {
     display: flex;
     gap: 2rem;
     margin-top: 2rem;
+    align-items: center;
 }
 
 .animations-list {
@@ -83,6 +84,12 @@ main {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
+
 .block {
     margin: 1.5rem auto;
     width: 120px;
@@ -90,6 +97,7 @@ main {
     border-radius: 10px;
     background-color: #1595ff;
     align-content: center;
+    font-size: 1.5rem;
 }
 
 /*Background color*/

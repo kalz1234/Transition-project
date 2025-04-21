@@ -85,6 +85,12 @@ section{
     align-self: center;
 }
 
+@media (min-width: 768px) {
+    section {
+      flex-direction: row;
+    }
+  }
+
 .block{
     height: 100px;
     background: #1595ff;
@@ -95,34 +101,43 @@ section{
     align-content: center;
 }
 
+
+/* Fade Effect */
 .block.fade{
     opacity: 0.5;
 }
 
+/* Translate X Effect */
 .block.slide-right {
     transform: translateX(40px);
 }
 
+/* Translate Y Effect */
 .block.slide-up {
     transform: translateY(-40px);
 }
 
+/* Rotate */
 .block.rotate {
     transform: rotate(45deg);
 }
 
+/* Scale */
 .block.scale {
     transform: scale(1.25);
 }
 
+/* Background-color Effect */
 .block.color {
     background: #ffc42b;
 }
 
+/* Shadow Effect */
 .block.shadow {
     box-shadow: 2px 2px 7px 0px snow;
 }
 
+/* Skew Effect */
 .block.skew {
     transform: skew(15deg);
 }
